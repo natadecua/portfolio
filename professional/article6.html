@@ -1,0 +1,75 @@
+<div id="content" class="container mt-4">
+    <h1>How to Code Python Calculator</h1>
+    <p>Python is a versatile programming language that can be used for a wide range of applications, including building a simple calculator. In this article, we will walk through the process of creating a basic calculator in Python that can perform addition, subtraction, multiplication, and division.</p>
+
+    <h3>1. Setting Up the Environment</h3>
+    <p>Before we start coding, ensure you have Python installed on your machine. You can download it from <a href="https://www.python.org/downloads/">Python's official website</a>. You can write Python code in any text editor or use an Integrated Development Environment (IDE) such as PyCharm or VSCode.</p>
+
+    <h3>2. Writing the Calculator Functions</h3>
+    <p>The first step is to define functions for each of the basic arithmetic operations. Here’s how you can create these functions:</p>
+    <pre><code>
+def add(x, y):
+return x + y
+
+def subtract(x, y):
+return x - y
+
+def multiply(x, y):
+return x * y
+
+def divide(x, y):
+if y != 0:
+    return x / y
+else:
+    return "Error: Division by zero"
+    </code></pre>
+    <p>In these functions, `x` and `y` are the numbers to be operated on. The `divide` function includes error handling to avoid division by zero, which would otherwise cause an error.</p>
+
+    <h3>3. Creating the Main Calculator Function</h3>
+    <p>The main function of the calculator will prompt the user to select an operation and input numbers. Based on the user's choice, it will call the appropriate arithmetic function and display the result:</p>
+    <pre><code>
+def calculator():
+print("Select operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+choice = input("Enter choice (1/2/3/4): ")
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+if choice == '1':
+    print("Result:", add(num1, num2))
+elif choice == '2':
+    print("Result:", subtract(num1, num2))
+elif choice == '3':
+    print("Result:", multiply(num1, num2))
+elif choice == '4':
+    print("Result:", divide(num1, num2))
+else:
+    print("Invalid input")
+    </code></pre>
+    <p>This function first displays a menu of operations and asks the user to select one. It then reads two numbers from the user and performs the selected operation. The result is printed to the screen.</p>
+
+    <h3>4. Running the Calculator</h3>
+    <p>To execute the calculator, include a conditional statement that calls the `calculator` function when the script is run directly:</p>
+    <pre><code>
+if __name__ == "__main__":
+calculator()
+    </code></pre>
+    <p>This ensures that the calculator function is only executed when the script is run directly, not when it is imported as a module in another script.</p>
+
+    <h3>5. Enhancements and Extensions</h3>
+    <p>This basic calculator can be extended with additional features. For example:</p>
+    <ul>
+        <li><strong>More Operations:</strong> Implement additional operations such as modulus, exponentiation, or square root.</li>
+        <li><strong>Graphical User Interface (GUI):</strong> Use a library like Tkinter to create a GUI for a more user-friendly experience.</li>
+        <li><strong>Error Handling:</strong> Enhance error handling for invalid inputs and edge cases.</li>
+        <li><strong>Unit Testing:</strong> Write unit tests to ensure the correctness of each function.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>Building a calculator is a great way to practice programming fundamentals and get familiar with handling user input and performing calculations. With Python's simplicity and power, you can easily extend this project to include more advanced features and functionalities.</p>
+</div>

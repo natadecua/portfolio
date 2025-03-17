@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Cua - Professional Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Nathan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/professional/professional.html">Go Back</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div id="content" class="container mt-4">
+        <h2>Professional Services</h2>
+        <form id="serviceForm2" enctype="multipart/form-data" method='POST'>
+                <!-- Text Input -->
+                <div class="mb-3">
+                    <label for="serviceType" class="form-label">Service Type</label>
+                    <input type="text" class="form-control" id="serviceType" name="serviceType" required>
+                </div>
+                
+                <!-- Email Input -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                
+                <!-- Number Input -->
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="100" required>
+                </div>
+                
+                <!-- Radio Buttons -->
+                <fieldset class="mb-3">
+                    <legend class="form-label">Preferred Contact Method</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                        <label class="form-check-label" for="contactEmail">Email</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="contactPhone" name="contactMethod" value="phone">
+                        <label class="form-check-label" for="contactPhone">Phone</label>
+                    </div>
+                </fieldset>
+                
+                <!-- Checkbox -->
+                <div class="mb-3">
+                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                    <label class="form-check-label" for="newsletter">Subscribe to newsletter</label>
+                </div>
+                
+                <!-- Date Picker -->
+                <div class="mb-3">
+                    <label for="date" class="form-label">Preferred Date</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                
+                <!-- Select Dropdown -->
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <select class="form-select" id="category" name="category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="development">Development</option>
+                        <option value="design">Design</option>
+                    </select>
+                </div>
+                
+                <!-- Textarea -->
+                <div class="mb-3">
+                    <label for="details" class="form-label">Details</label>
+                    <textarea class="form-control" id="details" name="details" rows="3" required></textarea>
+                </div>
+                <button type="submit" value="None" class="btn btn-primary">Submit</button>
+            </form>
+
+            
+        <form id="serviceForm" action='http://localhost:4000/upload' enctype="multipart/form-data" method='POST'>
+
+            <div class="mb-3">
+                <label for="attachment" class="form-label">Submit Premade Request</label>
+                <input type="file" class="form-control" name="myImage" required>
+            </div>
+            <button type="submit" value="None" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="serviceSummary" class="mt-4"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="services.js"></script>
+    </div>
+    
+    
+</body>
+</html>

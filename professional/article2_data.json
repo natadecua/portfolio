@@ -1,0 +1,28 @@
+{
+    "marketCap": [
+        {"year": "2018", "Bitcoin": 150000, "Ethereum": 50000, "Ripple": 20000},
+        {"year": "2019", "Bitcoin": 180000, "Ethereum": 70000, "Ripple": 30000},
+        {"year": "2020", "Bitcoin": 250000, "Ethereum": 120000, "Ripple": 60000},
+        {"year": "2021", "Bitcoin": 600000, "Ethereum": 250000, "Ripple": 90000}
+    ],
+    "transactionVolume": [
+        {"month": "Jan", "Bitcoin": 12000, "Ethereum": 8000},
+        {"month": "Feb", "Bitcoin": 13000, "Ethereum": 8500},
+        {"month": "Mar", "Bitcoin": 14000, "Ethereum": 9000},
+        {"month": "Apr", "Bitcoin": 15000, "Ethereum": 9500},
+        {"month": "May", "Bitcoin": 16000, "Ethereum": 10000}
+    ],
+    "priceFluctuation": [
+        {"time": "10:00", "Bitcoin": 35000},
+        {"time": "12:00", "Bitcoin": 36000},
+        {"time": "14:00", "Bitcoin": 34000},
+        {"time": "16:00", "Bitcoin": 37000},
+        {"time": "18:00", "Bitcoin": 36000}
+    ],
+    "marketShare": [
+        {"currency": "Bitcoin", "share": 60},
+        {"currency": "Ethereum", "share": 25},
+        {"currency": "Ripple", "share": 10},
+        {"currency": "Other", "share": 5}
+    ]
+}

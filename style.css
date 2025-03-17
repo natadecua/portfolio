@@ -1,0 +1,140 @@
+:root {
+    --bg-color: #0C0E16;
+    --text-color: #ADACB5;
+    --highlight-color: #E9E9E9;
+    --accent-color: #4CBFA6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+h1, h2, h3 {
+    color: var(--highlight-color);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+.job-header {
+    margin-bottom: 1rem;
+}
+
+.year {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.company {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.skills span {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+th{
+    color: var(--text-color);
+}
+
+td a, tr td, tbody{
+    color: var(--text-color);
+}
+.table tbody td{
+    color: var(--text-color);
+
+}
+
+.social-links a:hover {
+    color: var(--highlight-color);
+}
+
+.img-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.portfolio-item {
+    background: var(--bg-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-color: var(--bg-color);
+}
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+.portfolio-item p {
+    padding: 0 20px;
+    color: var(--text-color);
+}

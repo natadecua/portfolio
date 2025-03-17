@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Cua - Article 3</title>
+</head>
+<body>
+    <div id="content">
+        <h2>Service Pricing Calculator</h2>
+        <p>Calculate the price of a service based on the quality and time required.</p>
+        <!-- Service Pricing Calculator -->
+        <form id="calculatorForm">
+            <div class="mb-3">
+                <label for="quality" class="form-label">Quality (1 to 10)</label>
+                <input type="number" class="form-control" id="quality" min="1" max="10" required>
+            </div>
+            <div class="mb-3">
+                <label for="time" class="form-label">Time (hours)</label>
+                <input type="number" class="form-control" id="time" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+        <div id="calculatorResult" class="mt-4"></div>
+        <div id="price_chart" style="width: 900px; height: 500px;" class="mt-4"></div>
+    </div>
+        <script>
+           
