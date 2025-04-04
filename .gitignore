@@ -1,0 +1,33 @@
+
+---
+
+### 2. [.gitignore](http://_vscodecontentref_/2)
+```plaintext
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Build files
+/build
+/dist
+
+# Log files
+*.log
+npm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/c_cpp_properties.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tempCodeRunnerFile.*
